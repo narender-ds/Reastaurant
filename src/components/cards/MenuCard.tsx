@@ -88,7 +88,7 @@ export const MenuCard = (props: TrainerCardProps): JSX.Element => {
   const ImageResult = trainer?.photoGallery?.map((imgs: any) => {
     return (
       <>
-        <img style={{width:"70%",marginLeft:"40px"}}src={imgs?.image?.url} />
+        <img style={{width:"110%"}}src={imgs?.image?.url} />
       </>
     );
   });

@@ -35,13 +35,10 @@ function Accordiean({que,answer}:data) {
             {/* accordion-tab */}
           </div>
         </div>
-        <div className="w-full fixed bottom-0 text-center bg-red-700 py-4 text-white">
-          Pure CSS Accordion Built using TailwindCSS. CSS is generated using the
-          built tool by making tweaks to the <strong>tailwind.config.js</strong>
-        </div>
-      </div>
+             </div>
     </div>
   );
 }
 
 export default Accordiean;
+
