@@ -88,7 +88,7 @@ export const MenuCard = (props: TrainerCardProps): JSX.Element => {
   const ImageResult = trainer?.photoGallery?.map((imgs: any) => {
     return (
       <>
-        <img style={{width:"110%"}}src={imgs?.image?.url} />
+        <img style={{width:"110%",marginTop:"50px" }}src={imgs?.image?.url} />
       </>
     );
   });
@@ -98,7 +98,7 @@ export const MenuCard = (props: TrainerCardProps): JSX.Element => {
       <MenuItemcard
         name={trainer?.name}
         image={ImageResult}
-        price={trainer.price.value}
+        // price={trainer.price.value}
          details={trainer?.description}
       />
       
