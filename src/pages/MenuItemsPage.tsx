@@ -2,6 +2,7 @@ import React from "react";
 import AlternativeVerticals from "../components/AlternativeVerticals";
 import { MenuCard } from "../components/cards/MenuCard";
 import FetchApiData from "../components/FetchApiData";
+import Footer from "../components/Footer";
 import VerticalResults from "../components/VerticalResults";
 import usePageSetupEffect from "../hooks/usePageSetupEffect";
 
@@ -20,6 +21,7 @@ const MenuItems = ({ verticalKey }: { verticalKey: string }) => {
       {/* <FetchApiData/> */}
 
       <VerticalResults CardComponent={MenuCard} />
+      <Footer />
     </>
   );
 };
