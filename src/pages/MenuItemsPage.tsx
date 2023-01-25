@@ -18,6 +18,7 @@ const MenuItems = ({ verticalKey }: { verticalKey: string }) => {
         ]}
       />
       {/* <FetchApiData/> */}
+
       <VerticalResults CardComponent={MenuCard} />
     </>
   );

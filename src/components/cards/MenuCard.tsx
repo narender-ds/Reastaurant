@@ -5,8 +5,6 @@ import { useComposedCssClasses } from "../../hooks/useComposedCssClasses";
 import { CardProps } from "../../models/cardComponent";
 import MenuItemcard from "./CardForMenu";
 
-
-
 //prettier-ignore
 export interface TrainerCardConfig {
   showOrdinal?: boolean
@@ -88,20 +86,23 @@ export const MenuCard = (props: TrainerCardProps): JSX.Element => {
   const ImageResult = trainer?.photoGallery?.map((imgs: any) => {
     return (
       <>
-        <img style={{width:"110%",marginTop:"50px" }}src={imgs?.image?.url} />
+        <img
+          style={{ width: "50%", marginTop: "10px", marginLeft: "80px" }}
+          src={imgs?.image?.url}
+        />
       </>
     );
   });
   return (
     <>
-    
-      <MenuItemcard
-        name={trainer?.name}
-        image={ImageResult}
-        // price={trainer.price.value}
-         details={trainer?.description}
-      />
-      
+      <div className="flex flex-wrap gap-y-6">
+        <MenuItemcard
+          name={trainer?.name}
+          image={ImageResult}
+          price={trainer.price.value}
+          details={trainer?.description}
+        />
+      </div>
     </>
   );
 };

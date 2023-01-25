@@ -3,15 +3,8 @@ import { useContext } from "react";
 import { ResponsiveContext } from "../../App";
 import { useComposedCssClasses } from "../../hooks/useComposedCssClasses";
 import { CardProps } from "../../models/cardComponent";
-// import renderCardImg from '../../utils/renderCardImg';
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemButton,
-  AccordionItemPanel,
-} from "react-accessible-accordion";
 import Accordiean from "../Accordiean";
+// import renderCardImg from '../../utils/renderCardImg';
 
 //prettier-ignore
 export interface TrainerCardConfig {

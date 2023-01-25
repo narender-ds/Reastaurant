@@ -220,7 +220,7 @@ export function LocationCard(props: LocationCardProps): JSX.Element {
         </div>
       </div>
       <Link
-        className={cssClasses.ctaButton}
+        className="bg-blue-900  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
         to="
         https://www.google.com/maps"
       >
